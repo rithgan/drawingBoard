@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
   const draw = (event) => {
     // console.log(event);
     if (!drawing) return;
-    ctx.strokeStyle = "black";
+    ctx.strokeStyle = "white";
     ctx.lineWidth = 7;
     ctx.lineCap = "round";
     ctx.lineTo(event.clientX, event.clientY);
