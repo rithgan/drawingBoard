@@ -16,6 +16,8 @@ window.addEventListener("load", () => {
   const startPosition = (event) => {
     drawing = true;
     console.log("mousedown");
+    ctx.beginPath();
+    ctx.moveTo(event.clientX, event.clientY);
     draw(event);
     // console.log(event);
   };
